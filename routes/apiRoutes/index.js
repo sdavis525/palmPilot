@@ -1,11 +1,11 @@
-const router = require('express').Router();
+const router = require("express").Router();
 const { createNewNote } = require('../../lib/newNote');
 const { newNotes } = require('../../develop/db/db.json');
-const { uniUUID } = require('uuid')
+const { v4: uniUUID } = require("../../develop/db/db.json")
 
 
-router.get('newNotes', (req, res) => {
-  let results = newNotes ;
+router.get("/newNotes", (req, res) => {
+  let results = newNotes;
   if (results) {
     res.json(results);
   } else {
