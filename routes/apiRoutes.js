@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { createNewNote } = require('../lib/Notes');
-const { newNotes } = require('../develop/db/db.json');
-const { uniUUID } = require('../uuid')
+const { createNewNote } = require('../lib/notes');
+const  newNotes  = require('../develop/db/db.json');
+const  uniUUID  = require('../uuid')
 
 
-router.get('newNotes', (req, res) => {
+router.get('/notes', (req, res) => {
   let results = newNotes ;
   if (results) {
     res.json(results);
@@ -13,7 +13,7 @@ router.get('newNotes', (req, res) => {
   }
 });
 
-router.post('/newNotes', (req, res) => {
+router.post('/notes', (req, res) => {
   req.body.id = uniUUID();
     const notes = createNewNote(req.body, newNotes);
     res.json(notes);

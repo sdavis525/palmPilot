@@ -4,12 +4,26 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
     "socket.io": "^4.5.0"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdavis525/palmPilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sdavis525/palmPilot/issues"
+  },
+  "homepage": "https://github.com/sdavis525/palmPilot#readme"
 }
