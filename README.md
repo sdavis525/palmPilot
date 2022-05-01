@@ -16,17 +16,25 @@
 
 ### 🏠 [Homepage](https://github.com/sdavis525/palmPilot#readme)
 
-## Usage
+## Deployment
 
-```sh
-npm run start
+To deploy this project run
+
+```bash
+ node server.js
 ```
 
-## Run tests
 
-```sh
-npm run test
+## Installation
+
+Install my-project by cloning git repository and run
+
 ```
+npm install express
+```
+## Usage/Examples
+
+The able to write and save notes so that you can organize your thoughts and keep track of tasks that need to be completed.
 
 ## Author
 
