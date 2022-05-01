@@ -18,10 +18,10 @@
 
 ## Deployment
 
-To deploy this project run
+To deploy this project visit
 
 ```bash
- node server.js
+https://nameless-stream-69178.herokuapp.com/
 ```
 
 
